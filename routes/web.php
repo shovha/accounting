@@ -11,7 +11,10 @@
 |
 */
 
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('test',function (){
+   dd(database_path('asdf'));
+});
