@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -69,8 +70,8 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">List</a>
-                                        <a href="#">Add</a>
+                                        <a href="{{route('person.index')}}">List</a>
+                                        <a href="{{route('person.create')}}">Add</a>
                                     </li>
                                 </ul>
                             </li>

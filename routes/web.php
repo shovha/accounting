@@ -15,6 +15,6 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('test',function (){
-   dd(database_path('asdf'));
+Route::group(['middleware'=>'auth'],function (){
+    Route::resource('person',PeopleController::class);
 });
